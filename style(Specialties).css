@@ -1,0 +1,98 @@
+.specialties {
+  background-color: #ffffff; 
+  color: #222222;            
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 8px;       
+  max-width: 800px;
+  margin: 40px auto;         
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+}
+
+.specialties h2 {
+  color: #00bfff; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.specialties .intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.specialties ul {
+  list-style-type: none; 
+  padding-left: 0;
+}
+
+.specialties ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.specialties ul li:last-child {
+  border-bottom: none; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; 
+  padding: 15px 40px;
+  border-bottom: 2px solid #0077cc;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 28px;
+  color: #0077cc;
+  font-weight: bold;
+  user-select: none; 
+}
+
+nav a {
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #071c2f; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:first-child {
+  margin-left: 0;
+}
+
+nav a:hover {
+  color: #005fa3; 
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin: 5px 15px 5px 0;
+  }
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

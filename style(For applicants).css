@@ -1,0 +1,80 @@
+.applicants {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  color: #071c2f;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.applicants h2 {
+  color: #00bfff;
+  margin-bottom: 20px;
+}
+
+.applicants p {
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 40px;
+  border-bottom: 2px solid #0077cc; 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 28px;
+  color: #0077cc; 
+  font-weight: bold;
+  user-select: none; 
+}
+
+nav a {
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #071c2f; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:first-child {
+  margin-left: 0;
+}
+
+nav a:hover {
+  color: #005fa3; /* темно-синий при наведении */
+  text-decoration: underline;
+}
+
+/* Адаптивность для навигации */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin: 5px 15px 5px 0;
+  }
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

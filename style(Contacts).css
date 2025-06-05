@@ -1,0 +1,83 @@
+.contacts {
+  background-color: #ffffff;
+  color: #071c2f;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.contacts h2 {
+  color: #00bfff;
+  margin-bottom: 20px;
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contacts ul li {
+  margin: 10px 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; 
+  padding: 15px 40px;
+  border-bottom: 2px solid #0077cc; 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 28px;
+  color: #0077cc; 
+  font-weight: bold;
+  user-select: none; 
+}
+
+nav a {
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #071c2f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:first-child {
+  margin-left: 0;
+}
+
+nav a:hover {
+  color: #005fa3; 
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin: 5px 15px 5px 0;
+  }
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
