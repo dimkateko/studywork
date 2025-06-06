@@ -34,6 +34,53 @@
     </p>
   </div>
 </section>
+<button onclick="openGPTChat()" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 9999;
+">
+  Чат з GPT
+</button>
 
+<div id="gptChatBox" style="
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 400px;
+  height: 600px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  overflow: hidden;
+  z-index: 10000;
+">
+
+  <div style="background-color: #007bff; color: white; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+    <span>Онлайн-консультант GPT</span>
+    <button onclick="closeGPTChat()" style="background: none; border: none; color: white; font-size: 20px; cursor: pointer;">&times;</button>
+  </div>
+
+  <iframe src="https://gptonline.ai/chatgpt-online/" width="100%" height="100%" style="border: none;"></iframe>
+</div>
+
+<script>
+  function openGPTChat() {
+    document.getElementById("gptChatBox").style.display = "block";
+  }
+
+  function closeGPTChat() {
+    document.getElementById("gptChatBox").style.display = "none";
+  }
+</script>
 </body>
 </html>
